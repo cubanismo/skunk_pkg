@@ -1,0 +1,70 @@
+
+Things to check in Proofs:
+
+* Check color for consistency
+
+* Check centering off page content (Eyeball Logo on cover, footer lines, Joypad
+  rendering, installer images, etc.)
+
+* Verify transparent corners of mac window captures render transparent/white
+
+Workflows:
+
+-All the graphics in the manual are available in the assets directory of
+ this repo.
+
+-Run make_pdf.sh to export the skunk_manual.odt file to skunk_manual.pdf
+
+-Run make_book.sh to export the skunk_manual.odt file to skunk_manual.pdf and
+ generate a print-ready booklet PDF, with two manual pages per PDF page, and
+ 1/4" of bleed.
+
+ ***When printing these, Set printer to duplex using long-edge***
+
+-If the booklet pages must be sized up to 11x8.5, "print" them to PDF from
+ Preview on mac, being sure scaling is set to 100% and output is set to
+ landscape. There are probably better ways, but I haven't needed to use this
+ workflow in practice, so I haven't investigated further.
+
+Fonts:
+
+The following fonts are used, and must be installed when converting from
+OpenDocument format to PDF, even though they are embedded in skunk_manual.odt:
+
+* Arial Black: From Microsoft. Sorry. Details on how to get this font, as well
+  as its licensing information, are available here:
+
+    https://docs.microsoft.com/en-us/typography/font-list/arial-black
+
+  This is probably the only non-free asset used in the entire project, but from
+  my understanding (IANAL), it's only $35 at the time of writing to buy a stand-
+  alone license for this font suitable for producing print documents from it,
+  it's included with Windows if you have a license for that, and if you're
+  producing SkunkBoards or hard-copy documentation, you probably already have
+  this and/or the cost is nothing compared to what your other costs are going
+  to be. I considered replacing it, but nothing else looks quite as good. If
+  you're just producing some quick PDFs for personal use, this font is only used
+  on the cover page, so substituting something like DejaVu Sans Bold (Included
+  in LibreOffice, looks OK) won't throw off the formatting or anything. It just
+  won't have the same impact IMHO ;-)
+
+* Liberation Sans family: Included in LibreOffice
+* Liberation Serif family: Included in LibreOffice
+* Liberation Mono: Included in LibreOffice
+* OpenSymbol: Included in LibreOffice
+* Frutiger and a vintage version of Helvetica, as used in the original Atari
+  Manuals, are used in the Joypad graphic, but I've converted the text to paths
+  in this SVG prior to importing it to the manual document, as those ancient
+  fonts are difficult to install & use on modern systems. For the brave, they
+  can be found here:
+
+  https://www.u-235.co.uk/jagarchive/Jaguar_Artwork/Atari_111/Packaging%20FOnts
+
+Printing:
+
+* Print on glossy coated 80lb text weight paper for internal pages, glossy
+  coated 80lb cover weight paper for cover pages.
+
+* Used glossy UV lamination on outside of cover.
+
+* Finished size is 4.5" x 6.5". Document contains 0.25" bleed on all edges.
