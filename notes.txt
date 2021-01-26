@@ -1,3 +1,6 @@
-Boxes are 7"x4936"x1.218", or 7" x 4 15/16" x 1 7/32"
+Boxes are 7"x4.936"x1.218", or 7" x 4 15/16" x 1 7/32"
 
-Boxes appear to be printed on 14pt SBS paperboard
+NOTE! These are *outer* dimensions for the box, NOT inner dimensions. Box
+companies may be accustomed to working off the latter, so be sure to specify!
+
+Boxes are printed on 14pt SBS paperboard
