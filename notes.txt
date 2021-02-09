@@ -4,3 +4,6 @@ NOTE! These are *outer* dimensions for the box, NOT inner dimensions. Box
 companies may be accustomed to working off the latter, so be sure to specify!
 
 Boxes are printed on 14pt SBS paperboard
+
+To generate the USB stick content, follow the instructions in the comments at
+the top of scripts/mkdistzip.sh and scripts/mkusb.sh 
