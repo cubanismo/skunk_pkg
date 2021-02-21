@@ -42,17 +42,17 @@ usage() {
 	exit 1
 }
 
-getpath() {
-	DIR="`dirname $1`"
+getfullpath() {
+	DIR="`dirname "$1" 2>/dev/null`"
 	RET="`cd "$DIR"; pwd`"
 
-	echo "$RET"
+	echo "$RET/`basename "$1" 2>/dev/null`"
 }
 
 JCPVERS="$1"
-JCPWIN="`getpath "$2"`/`basename "$2"`"
-JCPMAC="`getpath "$3"`/`basename "$3"`"
-OUTFILE="`getpath "$4"`/`basename "$4"`"
+JCPWIN="`getfullpath "$2"`"
+JCPMAC="`getfullpath "$3"`"
+OUTFILE="`getfullpath "$4"`"
 
 if [ -z "$JCPVERS" ]; then
 	echo "Invalid JCP version"
